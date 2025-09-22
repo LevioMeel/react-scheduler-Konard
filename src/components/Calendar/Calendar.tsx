@@ -46,7 +46,7 @@ export const Calendar: FC<CalendarProps> = ({
     next,
     previous,
     reset
-  } = usePagination(filteredData);
+  } = usePagination(filteredData, zoom);
   const debouncedHandleMouseOver = useRef(
     debounce(
       (
